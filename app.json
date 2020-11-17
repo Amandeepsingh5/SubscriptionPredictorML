@@ -1,0 +1,6 @@
+{
+    "scripts":
+    {
+        "postdeploy": "curl http://localhost:52154/train"
+    }
+}

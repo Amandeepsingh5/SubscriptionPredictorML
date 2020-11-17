@@ -1,0 +1,23 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  {{ form.csrf_token }}
+  <table>
+    {{ render_field(form.age) }}
+    {{ render_field(form.job) }}
+    {{ render_field(form.marital) }}
+    {{ render_field(form.education) }}
+    {{ render_field(form.default) }}
+    {{ render_field(form.balance) }}
+    {{ render_field(form.housing) }}
+    {{ render_field(form.loan) }}
+    {{ render_field(form.contact) }}
+    {{ render_field(form.day) }}
+    {{ render_field(form.month) }}
+    {{ render_field(form.duration) }}
+    {{ render_field(form.campaign) }}
+    {{ render_field(form.pdays) }}
+    {{ render_field(form.previous) }}
+    {{ render_field(form.poutcome) }}
+  </table>
+  <p><input type=submit value=Register>
+</form>
